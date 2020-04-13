@@ -901,6 +901,56 @@ class FiscalRegistrator {
     }
 
     <#
+    Таблица № 11
+    Параметры кодирования qr-кодов
+    #>
+
+    # Кодировать текст в UTF-8
+    [void] Table11_1_CopyTextToUTF8 ([int]$CopyTextToUTF8){
+        $this.connect.editingValueInt(11, 1, 1, $CopyTextToUTF8)
+    }
+
+    # Размер модуля кода рекламного текста
+    [void] Table11_2_SizeModuleCodeReklamaText ([int]$SizeModuleCodeReklamaText){
+        $this.connect.editingValueInt(11, 1, 2, $SizeModuleCodeReklamaText)
+    }
+
+    # Избыточность кода рекламного текста
+    [void] Table11_3_RedundancyReklamaTextCode ([int]$RedundancyReklamaTextCode){
+        $this.connect.editingValueInt(11, 1, 3, $RedundancyReklamaTextCode)
+    }
+
+    # Маска кода рекламного текста
+    [void] Table11_4_MaskCodeRaklamaText ([int]$MaskCodeRaklamaText){
+        $this.connect.editingValueInt(11, 1, 4, $MaskCodeRaklamaText)
+    }
+
+    # Выравнивание кода рекламного текста
+    [void] Table11_5_AlignmentCodeReklamaText ([int]$AlignmentCodeReklamaText){
+        $this.connect.editingValueInt(11, 1, 5, $AlignmentCodeReklamaText)
+    }
+
+    # Размер модуля кода веб-ссылки
+    [void] Table11_6_SizeModuleCodeWebLink ([int]$SizeModuleCodeWebLink){
+        $this.connect.editingValueInt(11, 1, 6, $SizeModuleCodeWebLink)
+    }
+
+    # Избыточность кода веб-ссылки
+    [void] Table11_7_AlignmentCodeWebLink ([int]$AlignmentCodeWebLink){
+        $this.connect.editingValueInt(11, 1, 7, $AlignmentCodeWebLink)
+    }
+
+    # Маска кода веб-ссылки 
+    [void] Table11_8_MaskCodeWebLink ([int]$MaskCodeWebLink){
+        $this.connect.editingValueInt(11, 1, 8, $MaskCodeWebLink)
+    }
+
+    # Выравнивание кода веб-ссылки
+    [void] Table11_9_AlignmentCodeWebLink ([int]$AlignmentCodeWebLink){
+        $this.connect.editingValueInt(11, 1, 9, $AlignmentCodeWebLink)
+    }
+
+    <#
     Таблица № 12 
     Веб-ссылка
     #>
