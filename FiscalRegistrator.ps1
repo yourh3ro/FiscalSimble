@@ -326,15 +326,13 @@ class FiscalRegistrator {
         $this.connect.editingValueString(2, 4, 2, $PositionAndSurname)
     }
 
-
     [void] Table2_5_Password ([int]$Password){
         $this.connect.editingValueInt(2, 5, 1, $Password)
     }
 
-    [void] Table2_1_PositionAndSurname ([string]$PositionAndSurname){
+    [void] Table2_5_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 5, 2, $PositionAndSurname)
     }
-
 
     [void] Table2_6_Password ([int]$Password){
         $this.connect.editingValueInt(2, 6, 1, $Password)
@@ -344,7 +342,6 @@ class FiscalRegistrator {
         $this.connect.editingValueString(2, 6, 2, $PositionAndSurname)
     }
 
-
     [void] Table2_7_Password ([int]$Password){
         $this.connect.editingValueInt(2, 7, 1, $Password)
     }
@@ -352,7 +349,6 @@ class FiscalRegistrator {
     [void] Table2_7_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 7, 2, $PositionAndSurname)
     }
-
 
     [void] Table2_8_Password ([int]$Password){
         $this.connect.editingValueInt(2, 8, 1, $Password)
@@ -458,7 +454,6 @@ class FiscalRegistrator {
     [void] Table2_19_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 19, 2, $PositionAndSurname)
     }
-
 
     [void] Table2_20_Password ([int]$Password){
         $this.connect.editingValueInt(2, 20, 1, $Password)
@@ -951,7 +946,7 @@ class FiscalRegistrator {
     }
 
     # Server ip 4
-    [void] Table15_4_ServerIp3 ([int]$ServerIp4){
+    [void] Table15_4_ServerIp4 ([int]$ServerIp4){
         $this.connect.editingValueString(15, 1, 4, $ServerIp4)
     }
 
@@ -1167,3 +1162,6 @@ class FiscalRegistrator {
 
 }
 
+$fr = [FiscalRegistrator]::new('192.168.1.41')
+
+$fr.Table1_1_NumberinStore(23)
