@@ -711,7 +711,6 @@ class FiscalRegistrator {
         $this.connect.editingValueString(5, 1, 16, $PaymentType16)
     }
 
-
     <#
     Таблица № 7
     Наименование отделов
@@ -780,8 +779,6 @@ class FiscalRegistrator {
     [void] Table7_16_16StringDepartamentName ([string]$16StringDepartamentName){
         $this.connect.editingValueString(7, 1, 16, $16StringDepartamentName)
     }
-
-
 
     <#
     Таблица № 8
@@ -913,16 +910,54 @@ class FiscalRegistrator {
     Веб-ссылка
     #>
 
-    [void] Table12_1_Link1String ([int]$Link1String){
+    # Ссылка строка 1
+    [void] Table12_1_Link1String ([string]$Link1String){
         $this.connect.editingValueString(12, 1, 1, $Link1String)
     }
 
-    [void] Table12_2_Link2String ([int]$Link2String){
+    # Ссылка строка 2
+    [void] Table12_2_Link2String ([string]$Link2String){
         $this.connect.editingValueString(12, 1, 2, $Link2String)
     }
 
-    [void] Table12_3_Link3String ([int]$Link3String){
+    # Ссылка строка 3
+    [void] Table12_3_Link3String ([string]$Link3String){
         $this.connect.editingValueString(12, 1, 3, $Link3String)
+    }
+
+    <#
+    Таблица № 15
+    Сервер Транзакций
+    #>
+
+    # Режим передачи
+    [void] Table15_1_TranferMode ([int]$TranferMode){
+        $this.connect.editingValueString(15, 1, 1, $TranferMode)
+    }
+
+    # Server ip 1
+    [void] Table15_2_ServerIp1 ([int]$ServerIp1){
+        $this.connect.editingValueString(15, 1, 2, $ServerIp1)
+    }
+
+    # Server ip 2
+    [void] Table15_3_ServerIp2 ([int]$ServerIp2){
+        $this.connect.editingValueString(15, 1, 3, $ServerIp2)
+    }
+
+    # Server ip 3
+    [void] Table15_4_ServerIp3 ([int]$ServerIp3){
+        $this.connect.editingValueString(15, 1, 4, $ServerIp3)
+    }
+
+    # Server ip 4
+    [void] Table15_4_ServerIp3 ([int]$ServerIp4){
+        $this.connect.editingValueString(15, 1, 4, $ServerIp4)
+    }
+
+    # Server port
+    [void] Table15_2_ServerPort ([int]$ServerPort){
+        $this.connect.editingValueString(15, 1, 6, $ServerPort)
     }
 
     <#
@@ -1056,24 +1091,31 @@ class FiscalRegistrator {
     #>
 
     # Сервер
-    Table19_1_OFDServer ([string]$OFDServer){
+    [void] Table19_1_OFDServer ([string]$OFDServer){
         $this.connect.editingValueString(19, 1, 1, $OFDServer)
     }
     
     # Порт
-    Table19_2_OFDPort ([int]$OFDPort){
+    [void] Table19_2_OFDPort ([int]$OFDPort){
         $this.connect.editingValueInt(19, 1, 2, $OFDPort)
     }
     
     # Таймаут чтения ответа
-    Table19_3_OFDTimeoutResponce ([int]$OFDTimeoutResponce){
+    [void] Table19_3_OFDTimeoutResponce ([int]$OFDTimeoutResponce){
         $this.connect.editingValueInt(19, 1, 3, $OFDTimeoutResponce)
     }
     
     # Задержка между пакетами, мс
-    Table19_4_OFDDelayPackets ([int]$OFDDelayPackets){
+    [void] Table19_4_OFDDelayPackets ([int]$OFDDelayPackets){
         $this.connect.editingValueInt(19, 1, 4, $OFDDelayPackets)
     }
+
+    <#
+    Таблица № 21
+    Сетевые интерфейсы
+    #>
+
+
     
 }
 
