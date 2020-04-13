@@ -282,6 +282,270 @@ class FiscalRegistrator {
     }
 
     <#
+    Таблица № 2
+    Пароли Кассиров и администраторов
+    #>
+
+    [void] Table2_1_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 1, 1, $Password)
+    }
+
+    [void] Table2_1_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 1, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_2_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 2, 1, $Password)
+    }
+
+    [void] Table2_2_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 2, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_3_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 3, 1, $Password)
+    }
+
+    [void] Table2_3_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 3, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_4_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 4, 1, $Password)
+    }
+
+    [void] Table2_4_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 4, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_5_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 5, 1, $Password)
+    }
+
+    [void] Table2_1_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 5, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_6_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 6, 1, $Password)
+    }
+
+    [void] Table2_6_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 6, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_7_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 7, 1, $Password)
+    }
+
+    [void] Table2_7_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 7, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_8_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 8, 1, $Password)
+    }
+
+    [void] Table2_8_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 8, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_9_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 9, 1, $Password)
+    }
+
+    [void] Table2_9_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 9, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_10_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 10, 1, $Password)
+    }
+
+    [void] Table2_10_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 10, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_11_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 11, 1, $Password)
+    }
+
+    [void] Table2_11_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 11, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_12_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 12, 1, $Password)
+    }
+
+    [void] Table2_12_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 12, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_13_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 13, 1, $Password)
+    }
+
+    [void] Table2_13_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 13, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_14_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 14, 1, $Password)
+    }
+
+    [void] Table2_14_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 14, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_15_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 15, 1, $Password)
+    }
+
+    [void] Table2_15_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 15, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_16_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 16, 1, $Password)
+    }
+
+    [void] Table2_16_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 16, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_17_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 17, 1, $Password)
+    }
+
+    [void] Table2_17_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 17, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_18_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 18, 1, $Password)
+    }
+
+    [void] Table2_18_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 18, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_19_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 19, 1, $Password)
+    }
+
+    [void] Table2_19_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 19, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_20_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 20, 1, $Password)
+    }
+
+    [void] Table2_20_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 20, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_21_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 21, 1, $Password)
+    }
+
+    [void] Table2_21_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 21, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_22_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 22, 1, $Password)
+    }
+
+    [void] Table2_22_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 22, 2, $PositionAndSurname)
+    }
+
+
+    [void] Table2_23_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 23, 1, $Password)
+    }
+
+    [void] Table2_23_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 23, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_24_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 24, 1, $Password)
+    }
+
+    [void] Table2_24_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 24, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_25_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 25, 1, $Password)
+    }
+
+    [void] Table2_25_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 25, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_26_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 26, 1, $Password)
+    }
+
+    [void] Table2_26_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 26, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_27_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 27, 1, $Password)
+    }
+
+    [void] Table2_27_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 27, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_28_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 28, 1, $Password)
+    }
+
+    [void] Table2_28_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 28, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_29_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 29, 1, $Password)
+    }
+
+    [void] Table2_29_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 29, 2, $PositionAndSurname)
+    }
+
+    [void] Table2_30_Password ([int]$Password){
+        $this.connect.editingValueInt(2, 30, 1, $Password)
+    }
+
+    [void] Table2_30_PositionAndSurname ([string]$PositionAndSurname){
+        $this.connect.editingValueString(2, 30, 2, $PositionAndSurname)
+    }
+
+    <#
     Таблица 4 
     Текст в чеке
     #>
@@ -719,5 +983,4 @@ class FiscalRegistrator {
 
 
 }
-
 
