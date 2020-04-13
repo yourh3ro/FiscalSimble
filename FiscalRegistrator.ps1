@@ -909,6 +909,23 @@ class FiscalRegistrator {
     }
 
     <#
+    Таблица № 12 
+    Веб-ссылка
+    #>
+
+    [void] Table12_1_Link1String ([int]$Link1String){
+        $this.connect.editingValueString(12, 1, 1, $Link1String)
+    }
+
+    [void] Table12_2_Link2String ([int]$Link2String){
+        $this.connect.editingValueString(12, 1, 2, $Link2String)
+    }
+
+    [void] Table12_3_Link3String ([int]$Link3String){
+        $this.connect.editingValueString(12, 1, 3, $Link3String)
+    }
+
+    <#
     Таблица № 16
     Сетевой адрес
     #>
