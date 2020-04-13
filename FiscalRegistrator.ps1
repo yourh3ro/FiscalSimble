@@ -1115,7 +1115,55 @@ class FiscalRegistrator {
     Сетевые интерфейсы
     #>
 
+    # Режим ррр
+    [void] Table21_1_RRRMode ([int]$RRRMode){
+        $this.connect.editingValueInt(21, 1, 1, $RRRMode)
+    }
 
-    
+    # Режим обмена с офд
+    [void] Table21_2_TransferOFDMode ([int]$TransferOFDMode){
+        $this.connect.editingValueInt(21, 1, 2, $TransferOFDMode)
+    }
+
+    # Запуск tcp-сервера
+    [void] Table21_3_TCPServerStart ([int]$TCPServerStart){
+        $this.connect.editingValueInt(21, 1, 3, $TCPServerStart)
+    }
+
+    # Порт tcp-сурвера
+    [void] Table21_4_TCPServerPort ([int]$TCPServerPort){
+        $this.connect.editingValueInt(21, 1, 4, $TCPServerPort)
+    }
+
+    # Наличие wifi
+    [void] Table21_5_WiFiAvailability ([int]$WiFiAvailability){
+        $this.connect.editingValueInt(21, 1, 5, $WiFiAvailability)
+    }
+
+    # Использовать wifi
+    [void] Table21_6_WiFiUse ([int]$WiFiUse){
+        $this.connect.editingValueInt(21, 1, 6, $WiFiUse)
+    }
+
+    # wifi ssid
+    [void] Table21_7_WiFissid ([string]$WiFissid){
+        $this.connect.editingValueInt(21, 1, 7, $WiFissid)
+    }
+
+    # wifi passphrase
+    [void] Table21_8_WiFipassphrase ([string]$WiFipassphrase){
+        $this.connect.editingValueInt(21, 1, 8, $WiFipassphrase)
+    }
+
+    # RNDIS
+    [void] Table21_9_RNDIS ([int]$RNDIS){
+        $this.connect.editingValueInt(21, 1, 9, $RNDIS)
+    }
+
+    # Версия по wifi
+    [void] Table21_10_WiFiSoftVersion ([int]$WiFiSoftVersion){
+        $this.connect.editingValueInt(21, 1, 10, $WiFiSoftVersion)
+    }
+
 }
 
