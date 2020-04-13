@@ -24,6 +24,12 @@ class TCPWorkWithFR {
         $this.drvFR.Disconnect()
     }
 
+    [void] RebootFR(){
+        $this.drvFR.Reboot()
+        Start-Sleep -Seconds 10
+        $this.ConnectToFR()
+    }
+
     [void]editingValueString([int]$tableNumber, [int]$rowNumber, [int]$fieldNumber, [string]$valueString){
         $this.ConnectToFR()
         $this.drvFR.TableNumber        = $tableNumber
@@ -705,6 +711,78 @@ class FiscalRegistrator {
         $this.connect.editingValueString(5, 1, 16, $PaymentType16)
     }
 
+
+    <#
+    Таблица № 7
+    Наименование отделов
+    #>
+
+    [void] Table7_1_1StringDepartamentName ([string]$1StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 1, $1StringDepartamentName)
+    }
+
+    [void] Table7_2_2StringDepartamentName ([string]$2StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 2, $2StringDepartamentName)
+    }
+
+    [void] Table7_3_3StringDepartamentName ([string]$3StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 3, $3StringDepartamentName)
+    }
+
+    [void] Table7_4_4StringDepartamentName ([string]$4StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 4, $4StringDepartamentName)
+    }
+
+    [void] Table7_5_5StringDepartamentName ([string]$5StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 5, $5StringDepartamentName)
+    }
+
+    [void] Table7_6_6StringDepartamentName ([string]$6StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 6, $6StringDepartamentName)
+    }
+
+    [void] Table7_7_7StringDepartamentName ([string]$7StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 7, $7StringDepartamentName)
+    }
+
+    [void] Table7_8_8StringDepartamentName ([string]$8StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 8, $8StringDepartamentName)
+    }
+
+    [void] Table7_9_9StringDepartamentName ([string]$9StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 9, $9StringDepartamentName)
+    }
+
+    [void] Table7_10_10StringDepartamentName ([string]$10StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 10, $10StringDepartamentName)
+    }
+
+    [void] Table7_11_11StringDepartamentName ([string]$11StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 11, $11StringDepartamentName)
+    }
+
+    [void] Table7_12_12StringDepartamentName ([string]$12StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 12, $12StringDepartamentName)
+    }
+
+    [void] Table7_13_13StringDepartamentName ([string]$13StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 13, $13StringDepartamentName)
+    }
+
+    [void] Table7_14_14StringDepartamentName ([string]$14StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 14, $14StringDepartamentName)
+    }
+
+    [void] Table7_15_15StringDepartamentName ([string]$15StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 15, $15StringDepartamentName)
+    }
+
+    [void] Table7_16_16StringDepartamentName ([string]$16StringDepartamentName){
+        $this.connect.editingValueString(7, 1, 16, $16StringDepartamentName)
+    }
+
+
+
     <#
     Таблица № 8
     Настройка Шрифтов
@@ -980,7 +1058,5 @@ class FiscalRegistrator {
         $this.connect.editingValueInt(19, 1, 4, $OFDDelayPackets)
     }
     
-
-
 }
 
