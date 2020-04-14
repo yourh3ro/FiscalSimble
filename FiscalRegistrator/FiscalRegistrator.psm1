@@ -112,22 +112,22 @@ class FiscalRegistrator {
         $this.connect.editingValueInt(1, 1, 10, $PulseDurationCashDrawer)
     }  
 
-    # Использование весовых датчиков
+    # Длительность паузы имп. денежного ящика
     [void] Table1_11_PauseDurationCashDrawer ([int]$PauseDurationCashDrawer){
         $this.connect.editingValueInt(1, 1, 11, $PauseDurationCashDrawer)
     }
 
-    # Начисление налогов
+    # Количество имп. денежного ящика
     [void] Table1_12_ImpulseCountCashDrawer ([int]$ImpulseCountCashDrawer){
         $this.connect.editingValueInt(1, 1, 12, $ImpulseCountCashDrawer)
     }
 
-    # Автоматический перевод премени
+    # Использование весовых датчиков
     [void] Table1_13_UseWeightSensor ([int]$UseWeightSensor){
         $this.connect.editingValueInt(1, 1, 13, $UseWeightSensor)
     }
 
-    # Печать налогов
+    # Начисление налогов
     [void] Table1_14_TaxCharge ([int]$TaxCharge){
         $this.connect.editingValueInt(1, 1, 14, $TaxCharge)
     }
