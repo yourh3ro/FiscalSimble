@@ -78,4 +78,7 @@ $fr.Table19_2_OFDPort(7779)
  ```powershell
  C:\SetSettingsFiskalRegistratorShtrihM\inventoryFile.ps1
  ```
- 
+ # TODO:  
+- Описать функции с проверками посылаемых значений  
+- Методы для получения данных с ФР  
+- Привести в порядок Methods.md  
