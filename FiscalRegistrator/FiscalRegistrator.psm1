@@ -17,7 +17,6 @@ class TCPWorkWithFR {
         $this.drvFR.ProtocolType   = 0
         $this.drvFR.TCPPort        = 7778
         $this.drvFR.Timeout        = 5000
-        $this.drvFR.Beep()
     }
 
     [void] DisconectToFR() {
