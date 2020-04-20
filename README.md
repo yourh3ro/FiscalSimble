@@ -1,4 +1,4 @@
-# SetSettingsFiskalRegistratorShtrihM
+# FiscalSimble
 
 # ПРОЕКТ НАХОДИТСЯ В АКТИВНОЙ РАЗРАБОТКЕ. ВОЗМОЖНЫ КРУПНЫЕ ИЗМЕНЕНИЯ.
 
