@@ -12,12 +12,12 @@
 # Как начать?
 
 Скачиваем модуль и распаковываем в папку.  
-Например: *C:\SetSettingsFiskalRegistratorShtrihM*  
+Например: *C:\FiscalSimble*  
 Описание настроек происходит в файле *inventoryFile.ps1*.  
 В нем происходит создание объектов (Ваших фискальных регистраторов) и объявляются настройки, через методы и функции класса FiscalRegistrator.
 
 ```powershell
-Using module .\FiscalRegistrator
+Using module .\FiscalRegistrator\FiscalRegistrator.psm1
 $fr = [FiscalRegistrator]::new('')
 ```
  # Пример работы:
@@ -35,7 +35,7 @@ $fr = [FiscalRegistrator]::new('')
  В файле *inventoryFile.ps1* создаем объект класса FiscalRegistartor
  
  ```powershell
-Using module .\FiscalRegistrator
+Using module .\FiscalRegistrator\FiscalRegistrator.psm1
 
 # IP Адрес фискального регистратора это Строка (string). Берем в кавычки.
 $fr = [FiscalRegistrator]::new('192.168.1.41') 
@@ -52,9 +52,11 @@ $fr = [FiscalRegistrator]::new('192.168.1.41')
 ```
 И так далее.
 
-В файле inventoryFile.ps1 вызываем методы и задем нужные значения:
+В файле inventoryFile.ps1 вызываем методы и задаём нужные значения:
 
  ```powershell
+Using module .\FiscalRegistrator\FiscalRegistrator.psm1
+
 $fr = [FiscalRegistrator]::new('192.168.1.41') 
 
 #Номер кассы в магазине - 3
@@ -76,8 +78,15 @@ $fr.Table19_2_OFDPort(7779)
 Сохраняем *inventoryFile.ps1* и запускаем его через **Powershell (x86)**
 
  ```powershell
- C:\SetSettingsFiskalRegistratorShtrihM\inventoryFile.ps1
+ C:\FiscalSimble\inventoryFile.ps1
  ```
+
+Вы можете создать сами *inventoryFile.ps1* и назвать как угодно, для ведения учета по фискальным регистраторам. Главное, добавить в начале код, подключающий модуль, для возможности использования классов и методов модуля.
+
+ ```powershell
+  Using module .\FiscalRegistrator\FiscalRegistrator.psm1
+ ```
+
  # TODO:  
 - Описать функции с проверками посылаемых значений  
 - Методы для получения данных с ФР  

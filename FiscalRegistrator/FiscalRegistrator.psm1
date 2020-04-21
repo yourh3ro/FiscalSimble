@@ -1,17 +1,17 @@
-
+﻿
 
 class TCPWorkWithFR {
-    [string]$ipAdressFR
+    [string]$ipAddressFR
     [System.__ComObject]$drvFR
 
-    TCPWorkWithFR([string]$ipAdressFR) {
+    TCPWorkWithFR([string]$ipAddressFR) {
         $this.drvFR = New-Object -ComObject AddIn.DrvFR
-        $this.ipAdressFR = $ipAdressFR
+        $this.ipAddressFR = $ipAddressFR
     }
 
     [void] ConnectToFR() {
         $this.drvFR.UseIPAddress   = $true
-        $this.drvFR.IPAddress      = $this.ipAdressFR
+        $this.drvFR.IPAddress      = $this.ipAddressFR
         $this.drvFR.Password       = 30
         $this.drvFR.ConnectionType = 6
         $this.drvFR.ProtocolType   = 0
@@ -55,10 +55,10 @@ class TCPWorkWithFR {
 
 class FiscalRegistrator {
     
-    $connect = [TCPWorkWithFR]::new($this.ipAdress)
+    $connect = [TCPWorkWithFR]::new($this.ipAddress)
 
-    FiscalRegistrator([string]$ipAdress){
-        $this.connect.ipAdressFR = $ipAdress
+    FiscalRegistrator([string]$ipAddress){
+        $this.connect.ipAddressFR = $ipAddress
     }
 
     <#
@@ -67,18 +67,36 @@ class FiscalRegistrator {
     #>
 
     # Номер кассы в магазине
-    [void] Table1_1_NumberinStore ([int]$numberInStore){
+    [void]Table1_1_NumberinStore ([int]$numberInStore){
+        if ($numberInStore -ge 1 -and $numberInStore -le 99){
         $this.connect.editingValueInt(1, 1, 1, $numberInStore)
+        Write-Host ' Номер кассы в магазине = '$numberInStore}
+        else {
+        Write-Host ' ERROR | Значение свойства номер кассы в магазине = 1...99'
+        Write-Host ' ERROR | Значение свойства не будет применено'
+        }
     }
 
     # Авт. Обнуление денежной наличности
     [void] Table1_2_AutoZeroingCash ([int]$AutoZeroingCash){
+        if ($AutoZeroingCash -ge 0 -and $AutoZeroingCash -le 1){
         $this.connect.editingValueInt(1, 1, 2, $AutoZeroingCash)
+        Write-Host ' Авт. Обнуление денежной наличности = '$AutoZeroingCash}
+        else {
+            Write-Host ' ERROR | Значение Авт. Обнуление денежной наличности = 0...1'
+            Write-Host ' ERROR | Значение свойства не будет применено'
+        }
     }
 
     # Печать рекламного текста
     [void] Table1_3_PrintReklamaText ([int]$PrintReklamaText){
+        if ($PrintReklamaText -ge 0 -and $PrintReklamaText -le 3){
         $this.connect.editingValueInt(1, 1, 3, $PrintReklamaText)
+        Write-Host ' Печать рекламного текста = '$PrintReklamaText}
+        else {
+            Write-Host ' ERROR | Значение Печать рекламного текста = 0...3'
+            Write-Host ' ERROR | Значение свойства не будет применено'
+        }
     }
 
     # Печать необнуляемой суммы
@@ -1195,8 +1213,8 @@ class FiscalRegistrator {
     }
 
     # wifi passphrase
-    [void] Table21_8_WiFipassphrase ([string]$WiFipassphrase){
-        $this.connect.editingValueInt(21, 1, 8, $WiFipassphrase)
+    [void] Table21_8_WiFipassphrase ([string]$WiFiphrase){
+        $this.connect.editingValueInt(21, 1, 8, $WiFiphrase)
     }
 
     # RNDIS
