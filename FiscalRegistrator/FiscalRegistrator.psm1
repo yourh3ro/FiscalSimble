@@ -364,82 +364,175 @@ class FiscalRegistrator {
 
     # Тип суточного отчета
     [void] Table1_30_DayliReportType ([int]$DayliReportType){
+        if ($DayliReportType -ge 0 -and $DayliReportType -le 1){
         $this.connect.editingValueInt(1, 1, 30, $DayliReportType)
+        Write-Host ' Тип суточного отчета = '$DayliReportType}
+        else {
+        Write-Host ' ERROR | Значение Тип суточного отчета = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Сжатие шрифта на чековой ленте
     [void] Table1_31_FontCompressionOnCheck ([int]$FontCompressionOnCheck){
+        if ($FontCompressionOnCheck -ge 0 -and $FontCompressionOnCheck -le 1){
         $this.connect.editingValueInt(1, 1, 31, $FontCompressionOnCheck)
+        Write-Host ' Сжатие шрифта на чековой ленте = '$FontCompressionOnCheck}
+        else {
+        Write-Host ' ERROR | Значение Сжатие шрифта на чековой ленте = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Разгон при печати
     [void] Table1_32_OverclockWhenPrint ([int]$OverclockWhenPrint){
+        if ($OverclockWhenPrint -ge 0 -and $OverclockWhenPrint -le 1){
         $this.connect.editingValueInt(1, 1, 32, $OverclockWhenPrint)
+        Write-Host ' Разгон при печати = '$OverclockWhenPrint}
+        else {
+        Write-Host ' ERROR | Значение Разгон при печати = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Коррекция яркости
     [void] Table1_33_BrightnessСorrection ([int]$BrightnessСorrection){
+        if ($BrightnessСorrection -ge 0 -and $BrightnessСorrection -le 1){
         $this.connect.editingValueInt(1, 1, 33, $BrightnessСorrection)
+        Write-Host ' Коррекция яркости = '$BrightnessСorrection}
+        else {
+        Write-Host ' ERROR | Значение Коррекция яркости = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Яркость печати
     [void] Table1_34_BritnessPrint ([int]$BritnessPrint){
+        if ($BritnessPrint -ge 0 -and $BritnessPrint -le 3){
         $this.connect.editingValueInt(1, 1, 34, $BritnessPrint)
+        Write-Host ' Яркость печати = '$BritnessPrint}
+        else {
+        Write-Host ' ERROR | Значение Яркость печати = 0...3'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Печать типов оплаты
     [void] Table1_35_PrintPyamenTypes ([int]$PrintPyamenTypes){
+        if ($PrintPyamenTypes -ge 0 -and $PrintPyamenTypes -le 2){
         $this.connect.editingValueInt(1, 1, 35, $PrintPyamenTypes)
+        Write-Host ' Печать типов оплаты = '$PrintPyamenTypes}
+        else {
+        Write-Host ' ERROR | Значение Печать типов оплаты = 0...2'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'   
+        }
     }
 
     # Положение принтера
     [void] Table1_36_PrinterPosition ([int]$PrinterPosition){
+        if ($PrinterPosition -ge 0 -and $PrinterPosition -le 1){
         $this.connect.editingValueInt(1, 1, 36, $PrinterPosition)
+        Write-Host ' Положение принтера = '$PrinterPosition}
+        else {
+        Write-Host ' ERROR | Значение Положение принтера = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
+    <#
     # Печать рнм
+    # Диапазон 1...1. Скорее всего не используется.
     [void] Table1_37_PrintRNM ([int]$PrintRNM){
         $this.connect.editingValueInt(1, 1, 37, $PrintRNM)
     }
+    #>
 
     # Укороченное клише
     [void] Table1_38_ShortCliche ([int]$ShortCliche){
+        if ($ShortCliche -ge 0 -and $ShortCliche -le 1){
         $this.connect.editingValueInt(1, 1, 38, $ShortCliche)
+        Write-Host ' Укороченное клише = '$ShortCliche}
+        else {
+        Write-Host ' ERROR | Значение Укороченное клише = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'     
+        }
     }
 
     # Печать клише после завершения документа
     [void] Table1_39_PrintClicheAfterDocument ([int]$PrintClicheAfterDocument){
+        if ($PrintClicheAfterDocument -ge 0 -and $PrintClicheAfterDocument -le 1){
         $this.connect.editingValueInt(1, 1, 39, $PrintClicheAfterDocument)
+        Write-Host ' Печать клише после завершения документа = '$PrintClicheAfterDocument}
+        else {
+        Write-Host ' ERROR | Значение Печать клише после завершения документа = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Скорость печати 
     [void] Table1_40_PrintSpeed ([int]$PrintSpeed){
+        if ($PrintSpeed -ge 0 -and $PrintSpeed -le 2){
         $this.connect.editingValueInt(1, 1, 40, $PrintSpeed)
+        Write-Host ' Скорость печати = '$PrintSpeed}
+        else {
+        Write-Host ' ERROR | Значение Скорость печати = 0...2'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'   
+        }
     }
 
     # Кодирование реквизитов чека
-    [void] Table1_41_CodingDetailsCheck ([int]$CoddingDetailsCheck ){
+    [void] Table1_41_CodingDetailsCheck ([int]$CoddingDetailsCheck){
+        if ($CoddingDetailsCheck -ge 0 -and $CoddingDetailsCheck -le 1){
         $this.connect.editingValueInt(1, 1, 41, $CoddingDetailsCheck)
+        Write-Host ' Кодирование реквизитов чека = '$CoddingDetailsCheck}
+        else {
+        Write-Host ' ERROR | Значение Кодирование реквизитов чека = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Кодирование ссылки
     [void] Table1_42_CodingLink ([int]$CodingLink){
+        if ($CodingLink -ge 0 -and $CodingLink -le 2){
         $this.connect.editingValueInt(1, 1, 42, $CodingLink)
+        Write-Host ' Кодирование ссылки = '$CodingLink}
+        else {
+        Write-Host ' ERROR | Значение Кодирование ссылки = 0...2'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Автопечать журнала
     [void] Table1_43_AutoPrintJournal ([int]$AutoPrintJournal){
+        if ($AutoPrintJournal -ge 0 -and $AutoPrintJournal -le 1){
         $this.connect.editingValueInt(1, 1, 43, $AutoPrintJournal)
-    }
+        Write-Host ' Автопечать журнала = '$AutoPrintJournal}
+        else {
+        Write-Host ' ERROR | Значение Автопечать журнала = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
+    }    
 
     # Ведение журнала
     [void] Table1_44_ConductionJournal ([int]$ConductionJournal){
+        if ($ConductionJournal -ge 0 -and $ConductionJournal -le 2){
         $this.connect.editingValueInt(1, 1, 44, $ConductionJournal)
+        Write-Host ' Ведение журнала = '$ConductionJournal}
+        else {
+        Write-Host ' ERROR | Значение Ведение журнала = 0...2'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'    
+        }
     }
 
     # Режим низкого потребления
     [void] Table1_45_LowConsumptionMode ([int]$LowConsumptionMode){
+        if ($LowConsumptionMode -ge 0 -and $LowConsumptionMode -le 1){
         $this.connect.editingValueInt(1, 1, 45, $LowConsumptionMode)
+        Write-Host ' Режим низкого потребления = '$LowConsumptionMode}
+        else {
+        Write-Host ' ERROR | Значение Режим низкого потребления = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'      
+        }
     }
 
     <#
