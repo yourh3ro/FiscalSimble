@@ -73,7 +73,7 @@ class FiscalRegistrator {
         Write-Host ' Номер кассы в магазине = '$numberInStore}
         else {
         Write-Host ' ERROR | Значение свойства номер кассы в магазине = 1...99'
-        Write-Host ' ERROR | Значение свойства не будет применено'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
         }
     }
 
@@ -84,7 +84,7 @@ class FiscalRegistrator {
         Write-Host ' Авт. Обнуление денежной наличности = '$AutoZeroingCash}
         else {
             Write-Host ' ERROR | Значение Авт. Обнуление денежной наличности = 0...1'
-            Write-Host ' ERROR | Значение свойства не будет применено'
+            Write-Host ' ERROR | Значение свойства не будет присвоено'
         }
     }
 
@@ -95,133 +95,271 @@ class FiscalRegistrator {
         Write-Host ' Печать рекламного текста = '$PrintReklamaText}
         else {
             Write-Host ' ERROR | Значение Печать рекламного текста = 0...3'
-            Write-Host ' ERROR | Значение свойства не будет применено'
+            Write-Host ' ERROR | Значение свойства не будет присвоено'
         }
     }
 
     # Печать необнуляемой суммы
     [void] Table1_4_PrintNonZeroAmount ([int]$PrintNonZeroAmount){
+        if ($PrintNonZeroAmount -ge 0 -and $PrintNonZeroAmount -le 3){
         $this.connect.editingValueInt(1, 1, 5, $PrintNonZeroAmount)
+        Write-Host ' Печать необнуляемой суммы = '$PrintNonZeroAmount}
+        else {
+            Write-Host ' ERROR | Значение Печать необнуляемой суммы = 0...3'
+            Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Работа с денежным ящиком
     [void] Table1_6_WorkWithCashDrawer ([int]$WorkWithCashDrawer){
+        if ($WorkWithCashDrawer -ge 0 -and $WorkWithCashDrawer -le 1){
         $this.connect.editingValueInt(1, 1, 6, $WorkWithCashDrawer)
+        Write-Host ' Работа с денежным ящиком = '$WorkWithCashDrawer}
+     else {
+        Write-Host ' ERROR | Значение Работа с денежным ящиком = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Отрезка чека
     [void] Table1_7_CutCheck ([int]$CutCheck){
+        if ($CutCheck -ge 0 -and $CutCheck -le 2){
         $this.connect.editingValueInt(1, 1, 7, $CutCheck)
+        Write-Host ' Отрезка чека = '$CutCheck}
+        else {
+        Write-Host ' ERROR | Значение Отрезка чека = 0...2'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'    
+        }
     }
 
     # Печатать дробное в количестве
     [void] Table1_8_PrintDecimalInQuanity ([int]$DecimalInQuanity){
+        if ($DecimalInQuanity -ge 0 -and $DecimalInQuanity -le 1){
         $this.connect.editingValueInt(1, 1, 8, $DecimalInQuanity)
+        Write-Host ' Печатать дробное в количестве = '$DecimalInQuanity}
+        else {
+        Write-Host ' ERROR | Значение Печатать дробное в количестве = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Лог. уровень дат. денежного ящика
     [void] Table1_9_LogLevelDatCashDrawer ([int]$LogLevelDatCashDrawer){
+        if ($LogLevelDatCashDrawer -ge 0 -and $LogLevelDatCashDrawer -le 1){
         $this.connect.editingValueInt(1, 1, 9, $LogLevelDatCashDrawer)
-    }    
+        Write-Host ' Лог. уровень дат. денежного ящика = '$LogLevelDatCashDrawer}
+        else {
+        Write-Host ' ERROR | Значение Печатать Лог. уровень дат. денежного ящика = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
+    }
 
     # Длительность имп. денежного ящика
     [void] Table1_10_PulseDurationCashDrawer ([int]$PulseDurationCashDrawer){
+        if ($PulseDurationCashDrawer -ge 0 -and $PulseDurationCashDrawer -le 255){
         $this.connect.editingValueInt(1, 1, 10, $PulseDurationCashDrawer)
+        Write-Host ' Длительность имп. денежного ящика = '$PulseDurationCashDrawer}
+        else {
+        Write-Host ' ERROR | Значение Длительность имп. денежного ящика = 0...255'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }  
 
     # Длительность паузы имп. денежного ящика
     [void] Table1_11_PauseDurationCashDrawer ([int]$PauseDurationCashDrawer){
+        if ($PauseDurationCashDrawer -ge 0 -and $PauseDurationCashDrawer -le 255){
         $this.connect.editingValueInt(1, 1, 11, $PauseDurationCashDrawer)
-    }
+        Write-Host ' Длительность паузы имп. денежного ящика = '$PauseDurationCashDrawer}
+        else {
+        Write-Host ' ERROR | Значение Длительность паузы имп. денежного ящика = 0...255'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
+    } 
 
     # Количество имп. денежного ящика
     [void] Table1_12_ImpulseCountCashDrawer ([int]$ImpulseCountCashDrawer){
+        if ($ImpulseCountCashDrawer -ge 0 -and $ImpulseCountCashDrawer -le 255){
         $this.connect.editingValueInt(1, 1, 12, $ImpulseCountCashDrawer)
+        Write-Host ' Количество имп. денежного ящика = '$ImpulseCountCashDrawer}
+        else {
+        Write-Host ' ERROR | Значение Количество имп. денежного ящика = 0...255'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Использование весовых датчиков
     [void] Table1_13_UseWeightSensor ([int]$UseWeightSensor){
+        if ($UseWeightSensor -ge 0 -and $UseWeightSensor -le 1){
         $this.connect.editingValueInt(1, 1, 13, $UseWeightSensor)
+        Write-Host ' Использование весовых датчиков = '$UseWeightSensor}
+        else {
+        Write-Host ' ERROR | Значение Использование весовых датчиков = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Начисление налогов
     [void] Table1_14_TaxCharge ([int]$TaxCharge){
+        if ($TaxCharge -ge 0 -and $TaxCharge -le 1){
         $this.connect.editingValueInt(1, 1, 14, $TaxCharge)
+        Write-Host ' Начисление налогов = '$TaxCharge}
+        else {
+        Write-Host ' ERROR | Значение Начисление налогов = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Автоматический перевод времени
+    # Диапазон от 0 до 0 (???). Скорее всгео не используется
+    <#
     [void] Table1_15_AutoTimeTransfer ([int]$AutoTimeTransfer){
         $this.connect.editingValueInt(1, 1, 15, $AutoTimeTransfer)
     }
+    #>
 
     # Печать налогов
     [void] Table1_16_PrintTaxes ([int]$PrintTaxes){
+        if ($PrintTaxes -ge 0 -and $PrintTaxes -le 3){
         $this.connect.editingValueInt(1, 1, 16, $PrintTaxes)
+        Write-Host ' Печать налогов = '$PrintTaxes}
+        else {
+        Write-Host ' ERROR | Значение Печать налогов = 0...3'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Печать заголовка
     [void] Table1_17_PrintTitle ([int]$PrintTitle){
+        if ($PrintTitle -ge 0 -and $PrintTitle -le 1){
         $this.connect.editingValueInt(1, 1, 17, $PrintTitle)
+        Write-Host ' Печать заголовка = '$PrintTitle}
+        else {
+        Write-Host ' ERROR | Значение Печать налогов = 0...3'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
+    <#
     # Печать единичного количества
+    # Диапазон 1...1. Скорее всего не используется
     [void] Table1_18_PrintSingleQuantity ([int]$PrintSingleQuantity){
         $this.connect.editingValueInt(1, 1, 18, $PrintSingleQuantity)
     }
+    #>
 
+    <#
     # Сохранять строки в буфере чека
+    # Диапазон 1...1. Скорее всего не используется
     [void] Table1_19_SaveStringsInClipboard ([int]$SaveStringsInClipboard){
         $this.connect.editingValueInt(1, 1, 19, $SaveStringsInClipboard)
     }
+    #>
 
+    <#
     # Печать чека по закрытию
+    # Диапазон 1...1. Скорее всего не используется
     [void] Table1_20_PrintCheckWhenClosed ([int]$PrintCheckWhenClosed){
         $this.connect.editingValueInt(1, 1, 20, $PrintCheckWhenClosed)
     }
+    #>
 
     # Промотка перед отрезкой
     [void] Table1_21_RewindBeforeCut ([int]$RewindBeforeCut){
+        if ($RewindBeforeCut -ge 0 -and $RewindBeforeCut -le 1){
         $this.connect.editingValueInt(1, 1, 21, $RewindBeforeCut)
+        Write-Host ' Промотка перед отрезкой = '$RewindBeforeCut}
+        else {
+        Write-Host ' ERROR | Значение Промотка перед отрезкой = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Отрезка при открытом чеке
     [void] Table1_22_CutWhenCheckOpen ([int]$CutWhenCheckOpen){
+        if ($CutWhenCheckOpen -ge 0 -and $CutWhenCheckOpen -le 1){
         $this.connect.editingValueInt(1, 1, 22, $CutWhenCheckOpen)
+        Write-Host ' Отрезка при открытом чеке = '$CutWhenCheckOpen}
+        else {
+        Write-Host ' ERROR | Значение Отрезка при открытом чеке = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Запрет нулевого чека
     [void] Table1_23_BanZeroCheck ([int]$BanZeroCheck){
+        if ($BanZeroCheck -ge 0 -and $BanZeroCheck -le 1){
         $this.connect.editingValueInt(1, 1, 23, $BanZeroCheck)
+        Write-Host ' Запрет нулевого чека = '$BanZeroCheck}
+        else {
+        Write-Host ' ERROR | Значение Запрет нулевого чека = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Отступ в строке типов оплаты
     [void] Table1_24_IndientPaymentTypes ([int]$IndientPaymentTypes){
+        if ($IndientPaymentTypes -ge 0 -and $IndientPaymentTypes -le 1){
         $this.connect.editingValueInt(1, 1, 24, $IndientPaymentTypes)
+        Write-Host ' Отступ в строке типов оплаты = '$IndientPaymentTypes}
+        else {
+        Write-Host ' ERROR | Значение Отступ в строке типов оплаты = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Использование Форматирования в чеке
     [void] Table1_25_UseFormattingInCheck ([int]$UseFormattingInCheck){
+        if ($UseFormattingInCheck -ge 0 -and $UseFormattingInCheck -le 1){
         $this.connect.editingValueInt(1, 1, 25, $UseFormattingInCheck)
+        Write-Host ' Использование форматирования в чеке'}
+        else {
+            Write-Host ' ERROR | Значение Использование форматирования в чеке = 0...1'
+            Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Обнуление счетчика чеков
     [void] Table1_26_ResetCounterChecks ([int]$ResetCounterChecks){
+        if ($ResetCounterChecks -ge 0 -and $ResetCounterChecks -le 1){
         $this.connect.editingValueInt(1, 1, 26, $ResetCounterChecks)
+        Write-Host ' Обнуление счетчика чеков = '$ResetCounterChecks}
+        else {
+        Write-Host ' ERROR | Значение Обнуление счетчика чеков = 0...1'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Контроль времени
     [void] Table1_27_TimeControl ([int]$TimeControl){
+        if ($TimeControl -ge 0 -and $TimeControl -ge 99){
         $this.connect.editingValueInt(1, 1, 27, $TimeControl)
+        Write-Host ' Контроль времени = '$TimeControl}
+        else {
+        Write-Host ' ERROR | Значение Контроль времени = 0...99'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Отключение звука при ошибках
     [void] Table1_28_MuteWhenError ([int]$MuteWhenError){
+        if ($MuteWhenError -ge 0 -and $MuteWhenError -le 1){
         $this.connect.editingValueInt(1, 1, 28, $MuteWhenError)
+        Write-Host ' Отключение звука при ошибках = '$MuteWhenError}
+        else {
+        Write-Host ' ERROR | Значение Отключение звука при ошибках = 0...99'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Межстрочный интервал
     [void] Table1_29_LineInterval ([int]$LineInterval){
+        if ($LineInterval -ge 0 -and $LineInterval -le 10){
         $this.connect.editingValueInt(1, 1, 29, $LineInterval)
+        Write-Host ' Межстрочный интервал = '$LineInterval}
+        else {
+        Write-Host ' ERROR | Значение Межстрочный интервал = 0...10'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Тип суточного отчета
