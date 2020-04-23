@@ -818,72 +818,156 @@ class FiscalRegistrator {
 
     # Реклама в чеке 1 строка
     [void] Table4_1_Reklama1 ([string]$Reklama1){
+        if ($Reklama1.Length -lt 64){
         $this.connect.editingValueString(4, 1, 1, $Reklama1)
+        Write-Host ' Реклама в чеке 1 строка = '$Reklama1}
+        else {
+        Write-Host ' ERROR | Значение Реклама в чеке 1 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Реклама в чеке 2 строка
     [void] Table4_2_Reklama2 ([string]$Reklama2){
+        if ($Reklama2.Length -lt 64){
         $this.connect.editingValueString(4, 1, 2, $Reklama2)
+        Write-Host ' Реклама в чеке 2 строка = '$Reklama2}
+        else {
+        Write-Host ' ERROR | Значение Реклама в чеке 2 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Реклама в чеке 3 строка
     [void] Table4_3_Reklama3 ([string]$Reklama3){
+        if ($Reklama3.Length -lt 64){
         $this.connect.editingValueString(4, 1, 3, $Reklama3)
+        Write-Host ' Реклама в чеке 3 строка = '$Reklama3}
+        else {
+        Write-Host ' ERROR | Значение Реклама в чеке 3 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'      
+        }
     }
 
     # Клише 4 строка
     [void] Table4_4_Cliche4 ([string]$Cliche4){
+        if ($Cliche4.Length -lt 64){
         $this.connect.editingValueString(4, 1, 4, $Cliche4)
+        Write-Host ' Клише 4 строка = '$Cliche4}
+        else {
+        Write-Host ' ERROR | Значение Клише 4 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'      
+        }
     }
 
     # Клише 5 строка
     [void] Table4_5_Cliche5 ([string]$Cliche5){
+        if ($Cliche5.Length -lt 64){
         $this.connect.editingValueString(4, 1, 5, $Cliche5)
+        Write-Host ' Клише 5 строка = '$Cliche5}
+        else {
+        Write-Host ' ERROR | Значение Клише 5 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Клише 6 строка
     [void] Table4_6_Cliche6 ([string]$Cliche6){
+        if ($Cliche6.Length -lt 64){
         $this.connect.editingValueString(4, 1, 6, $Cliche6)
+        Write-Host ' Клише 6 строка = '$Cliche6}
+        else {
+        Write-Host ' ERROR | Значение Клише 6 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Клише 7 строка
     [void] Table4_7_Cliche7 ([string]$Cliche7){
+        if ($Cliche7.Length -lt 64){
         $this.connect.editingValueString(4, 1, 7, $Cliche7)
+        Write-Host ' Клише 7 строка = '$Cliche7}
+        else {
+        Write-Host ' ERROR | Значение Клише 7 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Клише 8 строка
     [void] Table4_8_Cliche8 ([string]$Cliche8){
+        if ($Cliche8.Length -lt 64){
         $this.connect.editingValueString(4, 1, 8, $Cliche8)
+        Write-Host ' Клише 8 строка = '$Cliche8}
+        else {
+        Write-Host ' ERROR | Значение Клише 8 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Клише 9 строка
     [void] Table4_9_Cliche9 ([string]$Cliche9){
+        if ($Cliche9.Length -lt 64){
         $this.connect.editingValueString(4, 1, 9, $Cliche9)
+        Write-Host ' Клише 9 строка = '$Cliche9}
+        else {
+        Write-Host ' ERROR | Значение Клише 9 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Клише 10 строка
     [void] Table4_10_Cliche10 ([string]$Cliche10){
+        if ($Cliche10.Length -lt 64){
         $this.connect.editingValueString(4, 1, 10, $Cliche10)
+        Write-Host ' Клише 10 строка = '$Cliche10}
+        else {
+        Write-Host ' ERROR | Значение Клише 10 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Клише 11 строка
     [void] Table4_11_Cliche11 ([string]$Cliche11){
+        if ($Cliche11 -lt 64){
         $this.connect.editingValueString(4, 1, 11, $Cliche11)
+        Write-Host ' Клише 11 строка = '$Cliche11}
+        else {
+        Write-Host ' ERROR | Значение Клише 11 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'     
+        }
     }
 
     # Клише 12 строка
     [void] Table4_12_Cliche12 ([string]$Cliche12){
+        if ($Cliche12 -lt 64){
         $this.connect.editingValueString(4, 1, 12, $Cliche12)
+        Write-Host ' Клише 12 строка = '$Cliche12}
+        else {
+        Write-Host ' ERROR | Значение Клише 12 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'       
+        }
     }
 
     # Клише 13 строка
     [void] Table4_13_Cliche13 ([string]$Cliche13){
+        if ($Cliche13.Length -lt 64){
         $this.connect.editingValueString(4, 1, 13, $Cliche13)
+        Write-Host ' Клише 13 строка = '$Cliche13}
+        else {
+        Write-Host ' ERROR | Значение Клише 13 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'   
+        }
     }
 
     # Клише 14 строка
     [void] Table4_14_Cliche14 ([string]$Cliche14){
+        if ($Cliche14 -lt 64){
         $this.connect.editingValueString(4, 1, 14, $Cliche14)
+        Write-Host ' Клише 14 строка = '$Cliche14}
+        else {
+        Write-Host ' ERROR | Значение Клише 14 строка не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     <#
