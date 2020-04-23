@@ -41,7 +41,7 @@ Using module .\FiscalRegistrator\FiscalRegistrator.psm1
 $fr = [FiscalRegistrator]::new('192.168.1.41') 
 ```
 
-Далее в файле модуля .\FiscalRegistrator\FiscalRegistrator.psm1 ищем методы, отвечающие за изменение нужных значений:
+Далее в файле Methods.md (Постоянно дополняется. Если Вы не нашли нужный вам метод, поищите его в коде модуля FiscalRegistator.ps1 ) ищем методы, отвечающие за изменение нужных значений:
 
  ```powershell
     # Номер кассы в магазине

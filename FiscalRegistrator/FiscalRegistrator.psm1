@@ -540,85 +540,102 @@ class FiscalRegistrator {
     Пароли Кассиров и администраторов
     #>
 
+    # Строка 1 Пароль
     [void] Table2_1_Password ([int]$Password){
         $this.connect.editingValueInt(2, 1, 1, $Password)
     }
 
+    # Строка 1 Должность и фамилия
     [void] Table2_1_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 1, 2, $PositionAndSurname)
     }
 
+    # Строка 2 Пароль
     [void] Table2_2_Password ([int]$Password){
         $this.connect.editingValueInt(2, 2, 1, $Password)
     }
 
+    # Строка 2 Должность и фамилия
     [void] Table2_2_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 2, 2, $PositionAndSurname)
     }
 
-
+    # Строка 3 Пароль
     [void] Table2_3_Password ([int]$Password){
         $this.connect.editingValueInt(2, 3, 1, $Password)
     }
 
+    # Строка 3 Должность и фамилия
     [void] Table2_3_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 3, 2, $PositionAndSurname)
     }
 
-
+    # Строка 4 Пароль
     [void] Table2_4_Password ([int]$Password){
         $this.connect.editingValueInt(2, 4, 1, $Password)
     }
 
+    # Строка 4 Должность и фамилия
     [void] Table2_4_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 4, 2, $PositionAndSurname)
     }
 
+    # Строка 5 Пароль
     [void] Table2_5_Password ([int]$Password){
         $this.connect.editingValueInt(2, 5, 1, $Password)
     }
 
+    # Строка 5 Должность и фамилия
     [void] Table2_5_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 5, 2, $PositionAndSurname)
     }
 
+    # Строка 6 пароль
     [void] Table2_6_Password ([int]$Password){
         $this.connect.editingValueInt(2, 6, 1, $Password)
     }
 
+    # Строка 6 Должность и фамилия
     [void] Table2_6_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 6, 2, $PositionAndSurname)
     }
 
+    # Строка 7 пароль 
     [void] Table2_7_Password ([int]$Password){
         $this.connect.editingValueInt(2, 7, 1, $Password)
     }
 
+    # Строка 7 Должность и фамилия
     [void] Table2_7_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 7, 2, $PositionAndSurname)
     }
 
+    # Строка 8 пароль
     [void] Table2_8_Password ([int]$Password){
         $this.connect.editingValueInt(2, 8, 1, $Password)
     }
 
+    # Строка 8 Должность и фамилия
     [void] Table2_8_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 8, 2, $PositionAndSurname)
     }
 
-
+    # Строка 9 Пароль 
     [void] Table2_9_Password ([int]$Password){
         $this.connect.editingValueInt(2, 9, 1, $Password)
     }
 
+    # Строка 9 Должность и фамилия
     [void] Table2_9_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 9, 2, $PositionAndSurname)
     }
 
+    # Строка 10 пароль
     [void] Table2_10_Password ([int]$Password){
         $this.connect.editingValueInt(2, 10, 1, $Password)
     }
 
+    # Строка 10 Должность и фамилия
     [void] Table2_10_PositionAndSurname ([string]$PositionAndSurname){
         $this.connect.editingValueString(2, 10, 2, $PositionAndSurname)
     }
