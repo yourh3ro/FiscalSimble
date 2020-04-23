@@ -3,4 +3,4 @@
 $fr = [FiscalRegistrator]::new('192.168.1.41')
 
 $fr.Table1_1_NumberinStore(15)
-
+$fr
