@@ -17,8 +17,8 @@
 |Table1_13_UseWeightSensor| Использование весовых датчиков
 |Table1_14_TaxCharge| Начисление налогов
 |Table1_15_AutoTimeTransfer| Автоматический перевод времени
-|Table1_16_PrintTaxes $PrintTaxes| Печать налогов
-|Table1_17_PrintTitle $PrintTitle| Печать заголовка
+|Table1_16_PrintTaxes | Печать налогов
+|Table1_17_PrintTitle | Печать заголовка
 |Table1_18_PrintSingleQuantity| Печать единичного количества
 |Table1_19_SaveStringsInClipboard| Сохранять строки в буфере чека
 |Table1_20_PrintCheckWhenClosed| Печать чека по закрытию
@@ -41,7 +41,7 @@
 |Table1_37_PrintRNM| Печать рнм
 |Table1_38_ShortCliche| Укороченное клише
 |Table1_39_PrintClicheAfterDocument| Печать клише после завершения документа
-|Table1_40_PrintSpeed| Скорость печати 
+|Table1_40_PrintSpeed| Скорость печати
 |Table1_41_CodingDetailsCheck | Кодирование реквизитов чека
 |Table1_42_CodingLink| Кодирование ссылки
 |Table1_43_AutoPrintJournal| Автопечать журнала
@@ -50,19 +50,19 @@
 
 ## Таблица 4 Текст в чеке
 
-| Метод       | Значение                       
+| Метод       | Значение
 | ------------- |:-------------:|
-|Table4_1_Reklama1 ([string]$Reklama1)| Реклама в чеке 1 строка
-|Table4_2_Reklama2 ([string]$Reklama2)| Реклама в чеке 2 строка
-|Table4_3_Reklama3 ([string]$Reklama3)| Реклама в чеке 3 строка
-|Table4_4_Cliche4 ([string]$Cliche4)| Клише 4 строка
-|Table4_5_Cliche5 ([string]$Cliche5)| Клише 5 строка
-|Table4_6_Cliche6 ([string]$Cliche6)| Клише 6 строка
-|Table4_7_Cliche7 ([string]$Cliche7)| Клише 7 строка
-|Table4_8_Cliche8 ([string]$Cliche8)| Клише 8 строка
-|Table4_9_Cliche9 ([string]$Cliche9)| Клише 9 строка
-|Table4_10_Cliche10 ([string]$Cliche10)| Клише 10 строка
-|Table4_11_Cliche11 ([string]$Cliche11)| Клише 11 строка
-|Table4_12_Cliche12 ([string]$Cliche12)| Клише 12 строка
-|Table4_13_Cliche13 ([string]$Cliche13)| Клише 13 строка
-|Table4_14_Cliche14 ([string]$Cliche14)| Клише 14 строка
+|Table4_1_Reklama1 | Реклама в чеке 1 строка
+|Table4_2_Reklama2 | Реклама в чеке 2 строка
+|Table4_3_Reklama3 | Реклама в чеке 3 строка
+|Table4_4_Cliche4 | Клише 4 строка
+|Table4_5_Cliche5 | Клише 5 строка
+|Table4_6_Cliche6 | Клише 6 строка
+|Table4_7_Cliche7 | Клише 7 строка
+|Table4_8_Cliche8 | Клише 8 строка
+|Table4_9_Cliche9 | Клише 9 строка
+|Table4_10_Cliche10 | Клише 10 строка
+|Table4_11_Cliche11 | Клише 11 строка
+|Table4_12_Cliche12 | Клише 12 строка
+|Table4_13_Cliche13 | Клише 13 строка
+|Table4_14_Cliche14 | Клише 14 строка
