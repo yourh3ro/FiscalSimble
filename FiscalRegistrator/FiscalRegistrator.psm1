@@ -1565,7 +1565,7 @@ class FiscalRegistrator {
         $this.connect.editingValueInt(16, 1, 22, $Socks5Ip3)
     }
     
-    # Socks5 ip5
+    # Socks5 ip4
     [void] Table16_23_Socks5Ip4 ([int]$Socks5Ip4){
         $this.connect.editingValueInt(16, 1, 23, $Socks5Ip4)
     }

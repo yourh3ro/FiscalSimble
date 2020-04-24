@@ -1,8 +1,8 @@
 # Методы и функции FiscalSimble
 
-## Таблица 1 Тип и режим кассы 
+## Таблица № 1 Тип и режим кассы
 
-| Метод       | Значение                       
+| Метод       | Значение
 | ------------- |:-------------:|
 |Table1_2_AutoZeroingCash   | Авт. Обнуление денежной наличности  
 |Table1_3_PrintReklamaText | Печать рекламного текста
@@ -48,7 +48,7 @@
 |Table1_44_ConductionJournal| Ведение журнала
 |Table1_45_LowConsumptionMode| Режим низкого потребления
 
-## Таблица 4 Текст в чеке
+## Таблица № 4 Текст в чеке
 
 | Метод       | Значение
 | ------------- |:-------------:|
@@ -66,3 +66,41 @@
 |Table4_12_Cliche12 | Клише 12 строка
 |Table4_13_Cliche13 | Клише 13 строка
 |Table4_14_Cliche14 | Клише 14 строка
+
+## Таблица № 19 Параметры ОФД
+
+| Метод       | Значение
+| ------------- |:-------------:|
+|Table19_1_OFDServer | Сервер
+|Table19_2_OFDPort | Порт
+|Table19_3_OFDTimeoutResponce | Таймаут чтения ответа
+|Table19_4_OFDDelayPackets | Задержка между пакетами, мс
+
+## Таблица № 16 Сетевой адрес
+
+| Метод       | Значение
+| ------------- |:-------------:|
+|Table16_1_StaticIp | Static ip
+|Table16_2_DHCPStatus | Статус dhcp
+|Table16_3_Localip1 | Local ip1
+|Table16_4_Localip2 | Local ip2
+|Table16_5_Localip3 | Local ip3
+|Table16_6_Localip4 | Local ip4
+|Table16_7_Gw1 | Gw1
+|Table16_8_Gw2 | Gw2
+|Table16_9_Gw3 | Gw3
+|Table16_10_Gw4 | Gw4
+|Table16_11_Mask1 | Mask1
+|Table16_12_Mask2 | Mask2
+|Table16_13_Mask3 | Mask3
+|Table16_14_Mask4 | Mask4
+|Table16_15_DNS1 | Dns1
+|Table16_16_DNS2 | Dns2
+|Table16_17_DNS3 | Dns3
+|Table16_18_DNS4 | Dns4
+|Table16_19_Socks5Client | Socks5 клиент
+|Table16_20_Socks5Ip1 | Socks5 ip1
+|Table16_21_Socks5Ip2 | Socks5 ip2
+|Table16_22_Socks5Ip3 | Socks5 ip3
+|Table16_23_Socks5Ip4 | Socks5 ip4
+|Table16_24_Socks5Port | Socks5 port
