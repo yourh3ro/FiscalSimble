@@ -928,7 +928,7 @@ class FiscalRegistrator {
 
     # Клише 11 строка
     [void] Table4_11_Cliche11 ([string]$Cliche11){
-        if ($Cliche11 -lt 64){
+        if ($Cliche11.Length -lt 64){
         $this.connect.editingValueString(4, 1, 11, $Cliche11)
         Write-Host ' Клише 11 строка = '$Cliche11}
         else {
@@ -939,7 +939,7 @@ class FiscalRegistrator {
 
     # Клише 12 строка
     [void] Table4_12_Cliche12 ([string]$Cliche12){
-        if ($Cliche12 -lt 64){
+        if ($Cliche12.Length -lt 64){
         $this.connect.editingValueString(4, 1, 12, $Cliche12)
         Write-Host ' Клише 12 строка = '$Cliche12}
         else {
@@ -977,82 +977,178 @@ class FiscalRegistrator {
 
     # Тип оплаты 1
     [void] Table5_1_PaymentType1 ([string]$PaymentType1){
+        if ($PaymentType1.Length -lt 64){
         $this.connect.editingValueString(5, 1, 1, $PaymentType1)
+        Write-Host ' Тип оплаты 1 = '$PaymentType1}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 1 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'      
+        }
     }
 
     # Тип оплаты 2
     [void] Table5_2_PaymentType2 ([string]$PaymentType2){
+        if ($PaymentType2.Length -lt 64){
         $this.connect.editingValueString(5, 1, 2, $PaymentType2)
+        Write-Host ' Тип оплаты 2 = '$PaymentType2}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 2 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'     
+        }
     }
 
     # Тип оплаты 3
     [void] Table5_3_PaymentType3 ([string]$PaymentType3){
+        if ($PaymentType3.Length -lt 64){
         $this.connect.editingValueString(5, 1, 3, $PaymentType3)
+        Write-Host ' Тип оплаты 3 = '$PaymentType3}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 3 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'     
+        }
     }
 
     # Тип оплаты 4
     [void] Table5_4_PaymentType4 ([string]$PaymentType4){
+        if ($PaymentType4.Length -lt 64){
         $this.connect.editingValueString(5, 1, 4, $PaymentType4)
+        Write-Host ' Тип оплаты 4 = '$PaymentType4}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 4 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'    
+        }
     }
 
     # Тип оплаты 5
     [void] Table5_5_PaymentType5 ([string]$PaymentType5){
+        if ($PaymentType5.Length -lt 64){
         $this.connect.editingValueString(5, 1, 5, $PaymentType5)
+        Write-Host ' Тип оплаты 5 = '$PaymentType5}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 5 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'     
+        }
     }
 
     # Тип оплаты 6
     [void] Table5_6_PaymentType6 ([string]$PaymentType6){
+        if ($PaymentType6.Length -lt 64){
         $this.connect.editingValueString(5, 1, 6, $PaymentType6)
+        Write-Host ' Тип оплаты 6 = '$PaymentType6}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 6 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Тип оплаты 7
     [void] Table5_7_PaymentType7 ([string]$PaymentType7){
+        if ($PaymentType7.Length -lt 64){
         $this.connect.editingValueString(5, 1, 7, $PaymentType7)
+        Write-Host ' Тип оплаты 7 = '$PaymentType7}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 7 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Тип оплаты 8
     [void] Table5_8_PaymentType8 ([string]$PaymentType8){
+        if ($PaymentType8.Length -lt 64){
         $this.connect.editingValueString(5, 1, 8, $PaymentType8)
+        Write-Host ' Тип оплаты 8 = '$PaymentType8}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 8 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'  
+        }
     }
 
     # Тип оплаты 9
     [void] Table5_9_PaymentType9 ([string]$PaymentType9){
+        if ($PaymentType9.Length -lt 64){
         $this.connect.editingValueString(5, 1, 9, $PaymentType9)
+        Write-Host ' Тип оплаты 9 = '$PaymentType9}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 9 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Тип оплаты 10
     [void] Table5_10_PaymentType10 ([string]$PaymentType10){
+        if ($PaymentType10.Length -lt 64){
         $this.connect.editingValueString(5, 1, 10, $PaymentType10)
+        Write-Host ' Тип оплаты 10 = '$PaymentType10}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 10 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Тип оплаты 11
     [void] Table5_11_PaymentType11 ([string]$PaymentType11){
+        if ($PaymentType11.Length -lt 64){
         $this.connect.editingValueString(5, 1, 11, $PaymentType11)
+        Write-Host ' Тип оплаты 11 = '$PaymentType11}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 11 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено' 
+        }
     }
 
     # Тип оплаты 12
     [void] Table5_12_PaymentType12 ([string]$PaymentType12){
+        if ($PaymentType12.Length -lt 64){
         $this.connect.editingValueString(5, 1, 12, $PaymentType12)
+        Write-Host ' Тип оплаты 12 = '$PaymentType12}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 12 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Тип оплаты 13
     [void] Table5_13_PaymentType13 ([string]$PaymentType13){
+        if ($PaymentType13.Length -lt 64){
         $this.connect.editingValueString(5, 1, 13, $PaymentType13)
+        Write-Host ' Тип оплаты 13 = '$PaymentType13}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 13 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Тип оплаты 14
     [void] Table5_14_PaymentType14 ([string]$PaymentType14){
+        if ($PaymentType14.Length -lt 64){
         $this.connect.editingValueString(5, 1, 14, $PaymentType14)
+        Write-Host ' Тип полаты 14 = '$PaymentType14}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 14 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Тип оплаты 15
     [void] Table5_15_PaymentType15 ([string]$PaymentType15){
+        if ($PaymentType15.Length -lt 64){
         $this.connect.editingValueString(5, 1, 15, $PaymentType15)
+        Write-Host ' Тип оплаты 15 = '$PaymentType15}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 15 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     # Тип оплаты 16
     [void] Table5_16_PaymentType16 ([string]$PaymentType16){
+        if ($PaymentType16.Length -lt 64){
         $this.connect.editingValueString(5, 1, 16, $PaymentType16)
+        Write-Host ' Тип оплаты 15 = '$PaymentType16}
+        else {
+        Write-Host ' ERROR | Значение Тип оплаты 16 не может быть длинее 64 символов'
+        Write-Host ' ERROR | Значение свойства не будет присвоено'
+        }
     }
 
     <#
