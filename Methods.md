@@ -67,15 +67,6 @@
 |Table4_13_Cliche13 | Клише 13 строка
 |Table4_14_Cliche14 | Клише 14 строка
 
-## Таблица № 19 Параметры ОФД
-
-| Метод       | Значение
-| ------------- |:-------------:|
-|Table19_1_OFDServer | Сервер
-|Table19_2_OFDPort | Порт
-|Table19_3_OFDTimeoutResponce | Таймаут чтения ответа
-|Table19_4_OFDDelayPackets | Задержка между пакетами, мс
-
 ## Таблица № 16 Сетевой адрес
 
 | Метод       | Значение
@@ -104,3 +95,12 @@
 |Table16_22_Socks5Ip3 | Socks5 ip3
 |Table16_23_Socks5Ip4 | Socks5 ip4
 |Table16_24_Socks5Port | Socks5 port
+
+## Таблица № 19 Параметры ОФД
+
+| Метод       | Значение
+| ------------- |:-------------:|
+|Table19_1_OFDServer | Сервер
+|Table19_2_OFDPort | Порт
+|Table19_3_OFDTimeoutResponce | Таймаут чтения ответа
+|Table19_4_OFDDelayPackets | Задержка между пакетами, мс
