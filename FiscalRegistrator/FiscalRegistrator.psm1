@@ -1227,52 +1227,112 @@ class FiscalRegistrator {
 
     # Текст в чеке
     [void] Table8_1_TextInCheck ([int]$TextInCheck){
+        if ($TextInCheck -ge 1 -and $TextInCheck -le 9){
         $this.connect.editingValueInt(8, 1, 1, $TextInCheck)
+        Write-Host ' Текст в чеке = '$TextInCheck}
+        else {
+        Write-Host ' ERROR | Значение Текст в чеке = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'
+        }
     }
 
     # Рекламный текст
     [void] Table8_2_ReklamaText ([int]$ReklamaText){
+        if ($ReklamaText -ge 1 -and $ReklamaText -le 9){
         $this.connect.editingValueInt(8, 1, 2, $ReklamaText)
+        Write-Host ' Рекламный текст = '$ReklamaText}
+        else {
+        Write-Host ' ERROR | Значение Рекламный Текст = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'
+        }
     }
 
     # Загловок Чека
     [void] Table8_3_TitleText ([int]$TitleText){
+        if ($TitleText -ge 1 -and $TitleText -le 9){
         $this.connect.editingValueInt(8, 1, 3, $TitleText)
+        Write-Host ' Заголовок чека = '$TitleText}
+        else {
+        Write-Host ' ERROR | Значение Заголовок чека = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'
+        }
     }
 
     # 1 строка в операции
     [void] Table8_4_1StringOperation ([int]$1StringOperation){
+        if ($1StringOperation -ge 1 -and $1StringOperation -le 9){
         $this.connect.editingValueInt(8, 1, 4, $1StringOperation)
+        Write-Host ' 1 строка в операции = '$1StringOperation}
+        else {
+        Write-Host ' ERROR | Значение 1 строка в операции = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'
+        }
     }
 
     # 2 строка в операции
     [void] Table8_5_2StringOperation ([int]$2StringOperation){
+        if ($2StringOperation -ge 1 -and $2StringOperation -le 9){
         $this.connect.editingValueInt(8, 1, 5, $2StringOperation)
+        Write-Host ' 2 строка в операции = '$2StringOperation}
+        else {
+        Write-Host ' ERROR | Значение 2 строка в операции = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'
+        }
     }
 
     # 3 строка в опреации
     [void] Table8_6_3StringOperation ([int]$3StringOperation){
+        if ($3StringOperation -ge 1 -and $3StringOperation -le 9){
         $this.connect.editingValueInt(8, 1, 6, $3StringOperation)
+        Write-Host ' 3 строка в операции = '$3StringOperation}
+        else {
+        Write-Host ' ERROR | Значение 3 строка в операции = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'
+        }
     }
 
     # 1 строка в скидке
     [void] Table8_7_1StringDiscount ([int]$1StringDiscount){
+        if ($1StringDiscount -ge 1 -and $1StringDiscount -le 9){
         $this.connect.editingValueInt(8, 1, 7, $1StringDiscount)
+        Write-Host ' 1 строка в скидке = '$1StringDiscount}
+        else {
+        Write-Host ' ERROR | Значение 1 строка в скидке = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'
+        }
     }
 
     # 2 строка в скидке
     [void] Table8_8_2StringDiscount ([int]$2StringDiscount){
+        if ($2StringDiscount -ge 1 -and $2StringDiscount -le 9){
         $this.connect.editingValueInt(8, 1, 8, $2StringDiscount)
+        Write-Host ' 2 строка в скидке = '$2StringDiscount}
+        else {
+        Write-Host ' ERROR | Значение 2 строка в скидке = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно'    
+        }
     }
 
     # 1 строка в надбавке
     [void] Table8_9_1StringAllowance ([int]$1StringAllowance){
+        if ($1StringAllowance -ge 1 -and $1StringAllowance -le 9){
         $this.connect.editingValueInt(8, 1, 9, $1StringAllowance)
+        Write-Host ' 1 строка в надбавке = '$1StringAllowance}
+        else {
+        Write-Host ' ERROR | Значение 1 строка в надбавке = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно' 
+        }
     }
 
     # 2 строка в надбавке
     [void] Table8_10_2StringAllowance ([int]$2StringAllowance){
+        if ($2StringAllowance -ge 1 -and $2StringAllowance -le 9){
         $this.connect.editingValueInt(8, 1, 10, $2StringAllowance)
+        Write-Host ' 2 строка в надбавке = '$2StringAllowance}
+        else {
+        Write-Host ' ERROR | Значение 2 строка в надбавке = 0...9'
+        Write-Host ' ERROR | Значение свойства не будет установленно' 
+        }
     }
 
     # 1 строка сторно скидки
