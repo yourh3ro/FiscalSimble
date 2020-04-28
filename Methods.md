@@ -103,8 +103,4 @@
 |Table19_1_OFDServer | Сервер
 |Table19_2_OFDPort | Порт
 |Table19_3_OFDTimeoutResponce | Таймаут чтения ответа
-<<<<<<< HEAD
 |Table19_4_OFDDelayPackets | Задержка между пакетами, мс
-=======
-|Table19_4_OFDDelayPackets | Задержка между пакетами, мс
->>>>>>> ad81c683455d1d122077aeef09a9f066b76ec359
